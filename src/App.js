@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+// import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import './App.css';
+import { SearchPlace } from './Components/Search_places';
+import Trail from './Trail/Trail';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Trail />
+      {/* <SearchPlace /> */}
     </div>
   );
 }
